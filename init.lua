@@ -1022,3 +1022,9 @@ vim.keymap.set('i', 'tn', '<Esc>', { desc = 'Exit INSERT mode (Colemak)' })
 
 -- Enable autoread for all buffers
 vim.o.relativenumber = true
+
+-- Use spaces instead of tabs
+vim.o.expandtab = true -- Convert tabs to spaces
+vim.o.shiftwidth = 2 -- Number of spaces for auto-indent
+vim.o.tabstop = 2 -- Number of spaces a tab counts for
+vim.o.softtabstop = 2 -- Number of spaces a tab counts for while editing
