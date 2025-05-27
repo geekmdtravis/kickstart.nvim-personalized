@@ -1,4 +1,5 @@
 # kickstart.nvim-personalized
+A personalized fork of an awesome NeoVim starter.
 
 ## Introduction
 

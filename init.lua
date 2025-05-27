@@ -1018,3 +1018,6 @@ require('lazy').setup({
 
 -- Custom Key Maps
 vim.keymap.set('i', 'tn', '<Esc>', { desc = 'Exit INSERT mode (Colemak)' })
+
+-- Enable autoread for all buffers
+vim.o.relativenumber = true
