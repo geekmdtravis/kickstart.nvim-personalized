@@ -1,4 +1,4 @@
-# kickstart.nvim-personalized
+# nvim-starter
 A personalized fork of an awesome NeoVim starter.
 
 ## Introduction
@@ -15,7 +15,7 @@ A starting point for Neovim that is:
 
 ### Install Neovim
 
-kickstart.nvim-personalized targets *only* the latest
+nvim-starter targets *only* the latest
 ['stable'](https://github.com/neovim/neovim/releases/tag/stable) and latest
 ['nightly'](https://github.com/neovim/neovim/releases/tag/nightly) of Neovim.
 If you are experiencing issues, please make sure you have the latest versions.
@@ -60,13 +60,13 @@ fork to your machine using one of the commands below, depending on your OS.
 
 > [!NOTE]
 > Your fork's URL will be something like this:
-> `https://github.com/<your_github_username>/kickstart.nvim-personalized.git`
+> `https://github.com/<your_github_username>/nvim-starter.git`
 
 You likely want to remove `lazy-lock.json` from your fork's `.gitignore` file
 too - it's ignored in the kickstart repo to make maintenance easier, but it's
 [recommended to track it in version control](https://lazy.folke.io/usage/lockfile).
 
-#### Clone kickstart.nvim-personalized
+#### Clone nvim-starter
 
 > [!NOTE]
 > If following the recommended step above (i.e., forking the repo), replace
@@ -75,7 +75,7 @@ too - it's ignored in the kickstart repo to make maintenance easier, but it's
 <details><summary> Linux and Mac </summary>
 
 ```sh
-git clone https://github.com/geekmdtravis/kickstart.nvim-personalized.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/geekmdtravis/nvim-starter.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 </details>
@@ -85,13 +85,13 @@ git clone https://github.com/geekmdtravis/kickstart.nvim-personalized.git "${XDG
 If you're using `cmd.exe`:
 
 ```
-git clone https://github.com/geekmdtravis/kickstart.nvim-personalized.git "%localappdata%\nvim"
+git clone https://github.com/geekmdtravis/nvim-starter.git "%localappdata%\nvim"
 ```
 
 If you're using `powershell.exe`
 
 ```
-git clone https://github.com/geekmdtravis/kickstart.nvim-personalized.git "${env:LOCALAPPDATA}\nvim"
+git clone https://github.com/geekmdtravis/nvim-starter.git "${env:LOCALAPPDATA}\nvim"
 ```
 
 </details>
@@ -159,8 +159,8 @@ set -g focus-events on
     same functionality is available here:
     * [kickstart-modular.nvim](https://github.com/dam9000/kickstart-modular.nvim)
   * Discussions on this topic can be found here:
-    * [Restructure the configuration](https://github.com/geekmdtravis/kickstart.nvim-personalized/issues/218)
-    * [Reorganize init.lua into a multi-file setup](https://github.com/geekmdtravis/kickstart.nvim-personalized/pull/473)
+    * [Restructure the configuration](https://github.com/geekmdtravis/nvim-starter/issues/218)
+    * [Reorganize init.lua into a multi-file setup](https://github.com/geekmdtravis/nvim-starter/pull/473)
 
 ### Install Recipes
 
