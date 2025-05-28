@@ -980,6 +980,8 @@ require('lazy').setup({
   -- require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
   require 'custom.plugins.trouble',
+  require 'custom.plugins.render-markdown',
+  require 'custom.plugins.bufferline',
   require 'custom.plugins.copilot-lua',
   require 'custom.plugins.neo-tree',
   require 'custom.plugins.fterm',
@@ -1022,7 +1024,8 @@ require('lazy').setup({
 vim.keymap.set('i', 'tn', '<Esc>', { desc = 'Exit INSERT mode (Colemak)' })
 vim.keymap.set('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>', { desc = 'Toggle FTerm' })
 vim.keymap.set('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>', { desc = 'Toggle FTerm' })
-
+vim.keymap.set('n', '<S-Tab>', '<CMD>BufferLineCyclePrev<CR>', { desc = 'Previous Buffer' })
+vim.keymap.set('n', '<Tab>', '<CMD>BufferLineCycleNext<CR>', { desc = 'Next Buffer' })
 -- Enable autoread for all buffers
 vim.o.relativenumber = true
 
