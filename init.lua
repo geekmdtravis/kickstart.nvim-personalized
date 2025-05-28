@@ -1,6 +1,6 @@
-require 'custom.keymaps'
-require 'custom.settings'
-require 'custom.autocommands'
+require 'cfg.keymaps'
+require 'cfg.settings'
+require 'cfg.autocommands'
 
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -17,24 +17,24 @@ rtp:prepend(lazypath)
 
 require('lazy').setup({
   'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
-  require 'custom.plugins.bufferline',
-  require 'custom.plugins.copilot-lua',
-  require 'custom.plugins.fterm',
-  require 'custom.plugins.gitsigns',
-  require 'custom.plugins.langutils.blink-cmp',
-  require 'custom.plugins.langutils.conform',
-  require 'custom.plugins.langutils.todo-comments',
-  require 'custom.plugins.lsp.lazydev',
-  require 'custom.plugins.lsp.nvim-lspconfig',
-  require 'custom.plugins.motionutils.mini',
-  require 'custom.plugins.neo-tree',
-  require 'custom.plugins.persistence',
-  require 'custom.plugins.render-markdown',
-  require 'custom.plugins.telescope',
-  require 'custom.plugins.treesitter',
-  require 'custom.plugins.trouble',
-  require 'custom.plugins.which-key',
-  require 'custom.themes.tokyonight',
+  require 'cfg.plugins.bufferline',
+  require 'cfg.plugins.copilot-lua',
+  require 'cfg.plugins.fterm',
+  require 'cfg.plugins.gitsigns',
+  require 'cfg.plugins.langutils.blink-cmp',
+  require 'cfg.plugins.langutils.conform',
+  require 'cfg.plugins.langutils.todo-comments',
+  require 'cfg.plugins.lsp.lazydev',
+  require 'cfg.plugins.lsp.nvim-lspconfig',
+  require 'cfg.plugins.motionutils.mini',
+  require 'cfg.plugins.neo-tree',
+  require 'cfg.plugins.persistence',
+  require 'cfg.plugins.render-markdown',
+  require 'cfg.plugins.telescope',
+  require 'cfg.plugins.treesitter',
+  require 'cfg.plugins.trouble',
+  require 'cfg.plugins.which-key',
+  require 'cfg.themes.tokyonight',
 }, {
-  ui = require 'custom.ui',
+  ui = require 'cfg.ui',
 })
