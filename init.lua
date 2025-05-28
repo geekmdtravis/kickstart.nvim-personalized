@@ -768,8 +768,6 @@ require('lazy').setup({
 
 -- Custom Key Maps
 vim.keymap.set('i', 'tn', '<Esc>', { desc = 'Exit INSERT mode (Colemak)' })
-vim.keymap.set('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>', { desc = 'Toggle FTerm' })
-vim.keymap.set('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>', { desc = 'Toggle FTerm' })
 vim.keymap.set('n', '<S-Tab>', '<CMD>BufferLineCyclePrev<CR>', { desc = 'Previous Buffer' })
 vim.keymap.set('n', '<Tab>', '<CMD>BufferLineCycleNext<CR>', { desc = 'Next Buffer' })
 -- Enable autoread for all buffers
