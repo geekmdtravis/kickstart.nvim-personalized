@@ -208,6 +208,7 @@ return {
       --
       cssls = {},
       jdtls = {},
+      ruff = {},
       lua_ls = {
         -- cmd = { ... },
         -- filetypes = { ... },
@@ -240,7 +241,6 @@ return {
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {
       'stylua', -- Used to format Lua code
-      'ruff',
       'prettierd',
       'clang-format',
       'google-java-format',
