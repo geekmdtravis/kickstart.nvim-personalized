@@ -5,6 +5,7 @@ vim.g.have_nerd_font = true
 vim.o.number = true
 vim.o.relativenumber = true
 -- Enable mouse mode, can be useful for resizing splits for example!
+vim.o.conceallevel = 1 -- Set for obsidian.nvim
 vim.o.mouse = 'a'
 -- Don't show the mode, since it's already in the status line
 vim.o.showmode = false

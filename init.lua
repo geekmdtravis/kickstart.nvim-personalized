@@ -16,6 +16,7 @@ local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
 require('lazy').setup({
+  'hrsh7th/nvim-cmp',
   'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
   require 'cfg.plugins.bufferline',
   require 'cfg.plugins.copilot-lua',
@@ -28,6 +29,7 @@ require('lazy').setup({
   require 'cfg.plugins.lsp.nvim-lspconfig',
   require 'cfg.plugins.motionutils.mini',
   require 'cfg.plugins.neo-tree',
+  require 'cfg.plugins.obsidian',
   require 'cfg.plugins.persistence',
   require 'cfg.plugins.render-markdown',
   require 'cfg.plugins.telescope',
