@@ -165,6 +165,7 @@ require('lazy').setup({
   },
 
   require 'custom.plugins.motionutils.mini',
+  require 'custom.plugins.persistence',
   require 'custom.plugins.telescope',
   require 'custom.plugins.langutils.conform',
   require 'custom.plugins.langutils.blink-cmp',
