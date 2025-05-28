@@ -982,6 +982,7 @@ require('lazy').setup({
   require 'custom.plugins.trouble',
   require 'custom.plugins.copilot-lua',
   require 'custom.plugins.neo-tree',
+  require 'custom.plugins.fterm',
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
   --
@@ -1019,6 +1020,8 @@ require('lazy').setup({
 
 -- Custom Key Maps
 vim.keymap.set('i', 'tn', '<Esc>', { desc = 'Exit INSERT mode (Colemak)' })
+vim.keymap.set('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>', { desc = 'Toggle FTerm' })
+vim.keymap.set('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>', { desc = 'Toggle FTerm' })
 
 -- Enable autoread for all buffers
 vim.o.relativenumber = true

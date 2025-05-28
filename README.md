@@ -116,6 +116,17 @@ examples of adding popularly requested plugins.
 > [!NOTE]
 > For more information about a particular plugin check its repository's documentation.
 
+#### Warning to `tmux` Users about Buffer Updates Outside of NeoVim
+
+When a buffer is updated outside of NeoVim, the default behavior is to automatically attempt to automatically reload the file. And, a warning is displayed in the event there is a conflict. If you are using `tmux`, this can cause issues with the buffer not being updated correctly.
+
+Updating the `.tmux.conf` file to include the following line will allow you to forward the focus events to Neovim, which will allow it to handle the buffer updates correctly:
+
+```bash
+set -g focus-events on
+```
+
+
 
 ### Getting Started
 
