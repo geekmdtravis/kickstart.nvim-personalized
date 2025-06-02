@@ -11,3 +11,16 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.hl.on_yank()
   end,
 })
+
+-- Disable LSP and diagnostics in diff buffers
+vim.api.nvim_create_autocmd('BufWinEnter', {
+  pattern = '*',
+  callback = function()
+    if vim.wo.diff then
+      -- Disable diagnostics in diff buffers
+      vim.diagnostic.enable(false)
+      -- Detach all LSP clients from this buffer
+      vim.lsp.buf_detach_client(0, 0)
+    end
+  end,
+})
