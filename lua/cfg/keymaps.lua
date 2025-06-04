@@ -19,7 +19,5 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
--- Custom Key Maps
-vim.keymap.set('i', 'tn', '<Esc>', { desc = 'Exit INSERT mode (Colemak)' })
 vim.keymap.set('n', '<S-Tab>', '<CMD>BufferLineCyclePrev<CR>', { desc = 'Previous Buffer' })
 vim.keymap.set('n', '<Tab>', '<CMD>BufferLineCycleNext<CR>', { desc = 'Next Buffer' })

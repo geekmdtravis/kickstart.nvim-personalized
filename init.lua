@@ -1,4 +1,3 @@
-require 'cfg.keymaps'
 require 'cfg.settings'
 require 'cfg.autocommands'
 
@@ -28,7 +27,8 @@ require('lazy').setup({
   require 'cfg.plugins.lsp.lazydev',
   require 'cfg.plugins.lsp.nvim-lspconfig',
   require 'cfg.plugins.motionutils.mini',
-  require 'cfg.plugins.neo-tree',
+  -- require 'cfg.plugins.neo-tree',
+  require 'cfg.plugins.no-neck-pain',
   require 'cfg.plugins.obsidian',
   require 'cfg.plugins.persistence',
   require 'cfg.plugins.render-markdown',
@@ -40,3 +40,4 @@ require('lazy').setup({
 }, {
   ui = require 'cfg.ui',
 })
+require 'cfg.keymaps'
